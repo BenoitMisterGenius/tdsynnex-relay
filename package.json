@@ -1,0 +1,12 @@
+{
+  "name": "tdsynnex-relay",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Relais HTTP protege pour les consultations TD SYNNEX Europe",
+  "engines": { "node": "24.x" },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test.mjs"
+  }
+}

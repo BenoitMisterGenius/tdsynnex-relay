@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: tdsynnex-relay
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: RELAY_KEY
+        generateValue: true
